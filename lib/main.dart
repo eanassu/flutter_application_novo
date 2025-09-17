@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_novo/segunda_tela.dart';
+import 'package:flutter_application_novo/tip_calculator.dart';
 
 void main() {
   runApp(const MyApp());
@@ -121,6 +122,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               }, 
               child: const Text('Ir para a Segunda Tela'),),
+              const SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const TipCalculator(),
+                  ),
+                );
+              }, 
+              child: const Text('Ir para a Tela de gorjeta'),),
           ],
         ),
       ),
