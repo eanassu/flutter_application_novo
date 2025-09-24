@@ -69,9 +69,9 @@ class DatabaseHelper {
     final db = await database;
     return await db.update('todos', todo.toMap(),where:'id=?',whereArgs: [todo.id]);
   }
-    Future<int> deleteTodo(Todo todo) async {
+    Future<int> deleteTodo(int  id) async {
     final db = await database;
-    return await db.delete('todos',where:'id=?',whereArgs: [todo.id]);
+    return await db.delete('todos',where:'id=?',whereArgs: [id]);
   }
 
 }
