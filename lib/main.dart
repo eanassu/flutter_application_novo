@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_novo/desenho.dart';
 import 'package:flutter_application_novo/home_screen.dart';
 import 'package:flutter_application_novo/segunda_tela.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
@@ -144,7 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const DatabaseHomeScreen(),
+                    builder: (context) => const DrawingScreen(),
                   ),
                 );
               }, 
